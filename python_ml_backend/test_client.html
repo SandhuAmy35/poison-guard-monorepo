@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PoisonGuard WebSocket Test</title>
+    <style>
+        body { font-family: monospace; background-color: #1e1e1e; color: #00ff00; padding: 20px; }
+        #messages { white-space: pre-wrap; word-wrap: break-word; }
+        .alert { color: #ff3333; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>WebSocket Telemetry Stream</h2>
+    <div id="status">Connecting...</div>
+    <hr>
+    <div id="messages"></div>
+
+    <script>
+        const statusDiv = document.getElementById('status');
+        const messagesDiv = document.getElementById('messages');
+        
+        // Connect to your FastAPI WebSocket endpoint
+       const ws = new WebSocket("ws://localhost:8000/ws/dashboard");
+
+        ws.onopen = function(event) {
+            statusDiv.innerHTML = "Status: CONNECTED to ws://127.0.0.1:8000/ws/dashboard";
+            statusDiv.style.color = "cyan";
+        };
+
+        ws.onmessage = function(event) {
+            const data = JSON.parse(event.data);
+            
+            // Format the JSON so it looks nice on screen
+            const formattedJson = JSON.stringify(data, null, 2);
+            
+            // Check if there are active threats to color it red
+            let htmlStr = `<p>${formattedJson}</p>`;
+            if (data.data && data.data.active_threats > 0) {
+                htmlStr = `<p class="alert">🚨 ANOMALY DETECTED<br>${formattedJson}</p>`;
+            }
+
+            // Prepend the new message to the top of the list
+            messagesDiv.innerHTML = htmlStr + messagesDiv.innerHTML;
+        };
+
+        ws.onclose = function(event) {
+            statusDiv.innerHTML = "Status: DISCONNECTED";
+            statusDiv.style.color = "red";
+        };
+        
+        ws.onerror = function(error) {
+            console.error("WebSocket Error: ", error);
+            statusDiv.innerHTML = "Status: ERROR";
+            statusDiv.style.color = "red";
+        }
+    </script>
+</body>
+</html>
