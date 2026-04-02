@@ -29719,3 +29719,4505 @@ events:
       CMAKE_SYSTEM_LIBRARY_PATH:
         - "/usr/lib/X11"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:796 (find_path)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "path"
+    variable: "CUDA_TOOLKIT_INCLUDE"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "device_functions.h"
+    candidate_directories:
+      - "/opt/cuda/include/"
+      - "/opt/cuda/"
+    found: "/opt/cuda/include/"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:851 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDART_LIBRARY"
+    description: "\"cudart\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudart"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcudart.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:853 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cudart_static_LIBRARY"
+    description: "static CUDA runtime library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudart_static"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcudart_static.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:871 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cudadevrt_LIBRARY"
+    description: "\"cudadevrt\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudadevrt"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcudadevrt.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:908 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cupti_LIBRARY"
+    description: "\"cupti\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cupti"
+    candidate_directories:
+      - "/opt/cuda/extras/CUPTI/lib/x64/"
+      - "/opt/cuda/extras/CUPTI/lib64/"
+      - "/opt/cuda/extras/CUPTI/libx64/"
+      - "/opt/cuda/extras/CUPTI/lib/Win32/"
+      - "/opt/cuda/extras/CUPTI/lib/"
+      - "/opt/cuda/extras/CUPTI/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/extras/CUPTI/lib/x64/"
+      - "/opt/cuda/extras/CUPTI/lib64/"
+      - "/opt/cuda/extras/CUPTI/libx64/"
+      - "/opt/cuda/extras/CUPTI/lib/Win32/"
+      - "/opt/cuda/extras/CUPTI/lib/"
+      - "/opt/cuda/extras/CUPTI/libWin32/"
+      - "/opt/cuda/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:938 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDA_LIBRARY"
+    description: "\"cuda\" library (older versions only)."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cuda"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:833 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:938 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDA_LIBRARY"
+    description: "\"cuda\" library (older versions only)."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cuda"
+    candidate_directories:
+      - "/opt/libtorch/lib/"
+      - "/opt/libtorch/"
+      - "/home/posiedon/.config/emacs/bin/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/"
+      - "/home/posiedon/.local/share/omarchy/bin/"
+      - "/home/posiedon/.local/share/mise/shims/"
+      - "/home/posiedon/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/cuda/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+      - "/usr/lib/nvidia-current/"
+    searched_directories:
+      - "/opt/libtorch/lib/"
+      - "/opt/libtorch/"
+      - "/home/posiedon/.config/emacs/bin/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/"
+      - "/home/posiedon/.local/share/omarchy/bin/"
+      - "/home/posiedon/.local/share/mise/shims/"
+      - "/home/posiedon/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/cuda/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libcuda.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:956 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cufft_LIBRARY"
+    description: "\"cufft\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cufft"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcufft.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:957 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cublas_LIBRARY"
+    description: "\"cublas\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cublas"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcublas.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:958 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cublasLt_LIBRARY"
+    description: "\"cublasLt\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cublasLt"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcublasLt.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:960 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cusparse_LIBRARY"
+    description: "\"cusparse\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cusparse"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcusparse.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:961 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_curand_LIBRARY"
+    description: "\"curand\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "curand"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcurand.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:968 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_nppc_LIBRARY"
+    description: "\"nppc\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nppc"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libnppc.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:979 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_npps_LIBRARY"
+    description: "\"npps\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "npps"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libnpps.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:982 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cusolver_LIBRARY"
+    description: "\"cusolver\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cusolver"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcusolver.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/FindCUDAToolkit.cmake:869 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/FindCUDAToolkit.cmake:1035 (_CUDAToolkit_find_and_add_import_lib)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:68 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cupti_LIBRARY"
+    description: "\"cupti\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cupti"
+    candidate_directories:
+      - "/opt/cuda/lib/nvidia/current/"
+      - "/opt/cuda/lib/lib64/"
+      - "/opt/cuda/lib/lib/x64/"
+      - "/opt/cuda/lib/lib/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib64/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/nvidia/current/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/../extras/CUPTI/lib64/"
+      - "/opt/cuda/../extras/CUPTI/lib/"
+      - "/opt/cuda/"
+      - "/opt/libtorch/lib/nvidia/current/"
+      - "/opt/libtorch/lib/lib64/"
+      - "/opt/libtorch/lib/lib/x64/"
+      - "/opt/libtorch/lib/lib/"
+      - "/opt/libtorch/lib/../extras/CUPTI/lib64/"
+      - "/opt/libtorch/lib/../extras/CUPTI/lib/"
+      - "/opt/libtorch/lib/"
+      - "/opt/libtorch/nvidia/current/"
+      - "/opt/libtorch/lib64/"
+      - "/opt/libtorch/lib/x64/"
+      - "/opt/libtorch/lib/"
+      - "/opt/libtorch/../extras/CUPTI/lib64/"
+      - "/opt/libtorch/../extras/CUPTI/lib/"
+      - "/opt/libtorch/"
+      - "/opt/cuda/lib/nvidia/current/"
+      - "/opt/cuda/lib/lib64/"
+      - "/opt/cuda/lib/lib/x64/"
+      - "/opt/cuda/lib/lib/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib64/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/nvidia/current/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/../extras/CUPTI/lib64/"
+      - "/opt/cuda/../extras/CUPTI/lib/"
+      - "/opt/cuda/"
+      - "/home/posiedon/.config/emacs/bin/nvidia/current/"
+      - "/home/posiedon/.config/emacs/bin/lib64/"
+      - "/home/posiedon/.config/emacs/bin/lib/x64/"
+      - "/home/posiedon/.config/emacs/bin/lib/"
+      - "/home/posiedon/.config/emacs/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.config/emacs/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.config/emacs/bin/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/nvidia/current/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/lib64/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/lib/x64/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/lib/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/nvidia/current/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/lib64/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/lib/x64/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/lib/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/"
+      - "/home/posiedon/.local/share/omarchy/bin/nvidia/current/"
+      - "/home/posiedon/.local/share/omarchy/bin/lib64/"
+      - "/home/posiedon/.local/share/omarchy/bin/lib/x64/"
+      - "/home/posiedon/.local/share/omarchy/bin/lib/"
+      - "/home/posiedon/.local/share/omarchy/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/omarchy/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/omarchy/bin/"
+      - "/home/posiedon/.local/share/mise/shims/nvidia/current/"
+      - "/home/posiedon/.local/share/mise/shims/lib64/"
+      - "/home/posiedon/.local/share/mise/shims/lib/x64/"
+      - "/home/posiedon/.local/share/mise/shims/lib/"
+      - "/home/posiedon/.local/share/mise/shims/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/mise/shims/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/mise/shims/"
+      - "/home/posiedon/.local/bin/nvidia/current/"
+      - "/home/posiedon/.local/bin/lib64/"
+      - "/home/posiedon/.local/bin/lib/x64/"
+      - "/home/posiedon/.local/bin/lib/"
+      - "/home/posiedon/.local/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/bin/"
+      - "/usr/local/sbin/nvidia/current/"
+      - "/usr/local/sbin/lib64/"
+      - "/usr/local/sbin/lib/x64/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/../extras/CUPTI/lib64/"
+      - "/usr/local/sbin/../extras/CUPTI/lib/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/nvidia/current/"
+      - "/usr/local/bin/lib64/"
+      - "/usr/local/bin/lib/x64/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/../extras/CUPTI/lib64/"
+      - "/usr/local/bin/../extras/CUPTI/lib/"
+      - "/usr/local/bin/"
+      - "/usr/bin/nvidia/current/"
+      - "/usr/bin/lib64/"
+      - "/usr/bin/lib/x64/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/../extras/CUPTI/lib64/"
+      - "/usr/bin/../extras/CUPTI/lib/"
+      - "/usr/bin/"
+      - "/opt/cuda/bin/nvidia/current/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/lib/x64/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/../extras/CUPTI/lib64/"
+      - "/opt/cuda/bin/../extras/CUPTI/lib/"
+      - "/opt/cuda/bin/"
+      - "/usr/lib/jvm/default/bin/nvidia/current/"
+      - "/usr/lib/jvm/default/bin/lib64/"
+      - "/usr/lib/jvm/default/bin/lib/x64/"
+      - "/usr/lib/jvm/default/bin/lib/"
+      - "/usr/lib/jvm/default/bin/../extras/CUPTI/lib64/"
+      - "/usr/lib/jvm/default/bin/../extras/CUPTI/lib/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/nvidia/current/"
+      - "/usr/bin/site_perl/lib64/"
+      - "/usr/bin/site_perl/lib/x64/"
+      - "/usr/bin/site_perl/lib/"
+      - "/usr/bin/site_perl/../extras/CUPTI/lib64/"
+      - "/usr/bin/site_perl/../extras/CUPTI/lib/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/nvidia/current/"
+      - "/usr/bin/vendor_perl/lib64/"
+      - "/usr/bin/vendor_perl/lib/x64/"
+      - "/usr/bin/vendor_perl/lib/"
+      - "/usr/bin/vendor_perl/../extras/CUPTI/lib64/"
+      - "/usr/bin/vendor_perl/../extras/CUPTI/lib/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/nvidia/current/"
+      - "/usr/bin/core_perl/lib64/"
+      - "/usr/bin/core_perl/lib/x64/"
+      - "/usr/bin/core_perl/lib/"
+      - "/usr/bin/core_perl/../extras/CUPTI/lib64/"
+      - "/usr/bin/core_perl/../extras/CUPTI/lib/"
+      - "/usr/bin/core_perl/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/nvidia/current/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/lib64/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/lib/x64/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/lib/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/"
+      - "/usr/local/lib/nvidia/current/"
+      - "/usr/local/lib/lib64/"
+      - "/usr/local/lib/lib/x64/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/../extras/CUPTI/lib64/"
+      - "/usr/local/lib/../extras/CUPTI/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/nvidia/current/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/x64/"
+      - "/usr/local/lib/"
+      - "/usr/local/../extras/CUPTI/lib64/"
+      - "/usr/local/../extras/CUPTI/lib/"
+      - "/usr/local/"
+      - "/usr/lib/nvidia/current/"
+      - "/usr/lib/lib64/"
+      - "/usr/lib/lib/x64/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/../extras/CUPTI/lib64/"
+      - "/usr/lib/../extras/CUPTI/lib/"
+      - "/usr/lib/"
+      - "/usr/nvidia/current/"
+      - "/usr/lib64/"
+      - "/usr/lib/x64/"
+      - "/usr/lib/"
+      - "/usr/../extras/CUPTI/lib64/"
+      - "/usr/../extras/CUPTI/lib/"
+      - "/usr/"
+      - "/lib/nvidia/current/"
+      - "/lib/lib64/"
+      - "/lib/lib/x64/"
+      - "/lib/lib/"
+      - "/lib/../extras/CUPTI/lib64/"
+      - "/lib/../extras/CUPTI/lib/"
+      - "/lib/"
+      - "/usr/X11R6/lib/nvidia/current/"
+      - "/usr/X11R6/lib/lib64/"
+      - "/usr/X11R6/lib/lib/x64/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/../extras/CUPTI/lib64/"
+      - "/usr/X11R6/lib/../extras/CUPTI/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/nvidia/current/"
+      - "/usr/X11R6/lib64/"
+      - "/usr/X11R6/lib/x64/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/../extras/CUPTI/lib64/"
+      - "/usr/X11R6/../extras/CUPTI/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/nvidia/current/"
+      - "/usr/pkg/lib/lib64/"
+      - "/usr/pkg/lib/lib/x64/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/../extras/CUPTI/lib64/"
+      - "/usr/pkg/lib/../extras/CUPTI/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/nvidia/current/"
+      - "/usr/pkg/lib64/"
+      - "/usr/pkg/lib/x64/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/../extras/CUPTI/lib64/"
+      - "/usr/pkg/../extras/CUPTI/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/nvidia/current/"
+      - "/opt/lib/lib64/"
+      - "/opt/lib/lib/x64/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/../extras/CUPTI/lib64/"
+      - "/opt/lib/../extras/CUPTI/lib/"
+      - "/opt/lib/"
+      - "/opt/nvidia/current/"
+      - "/opt/lib64/"
+      - "/opt/lib/x64/"
+      - "/opt/lib/"
+      - "/opt/../extras/CUPTI/lib64/"
+      - "/opt/../extras/CUPTI/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/nvidia/current/"
+      - "/usr/lib/X11/lib64/"
+      - "/usr/lib/X11/lib/x64/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/../extras/CUPTI/lib64/"
+      - "/usr/lib/X11/../extras/CUPTI/lib/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/opt/cuda/lib/nvidia/current/"
+      - "/opt/cuda/lib/lib64/"
+      - "/opt/cuda/lib/lib/x64/"
+      - "/opt/cuda/lib/lib/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib64/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib/"
+    found: "/opt/cuda/lib/libcupti.so"
+    search_context:
+      package_stack:
+        -
+          package_paths:
+            - "/opt/cuda"
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:108 (try_run)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    directories:
+      source: "/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp"
+      binary: "/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/libtorch/libtorch/share/cmake/Caffe2;/opt/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bff0a/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_bff0a.dir/build.make CMakeFiles/cmTC_bff0a.dir/build
+        make[1]: Entering directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_bff0a.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/opt/cuda/include -std=gnu++17 -o CMakeFiles/cmTC_bff0a.dir/detect_cuda_version.cc.o -c /home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/detect_cuda_version.cc
+        Linking CXX executable cmTC_bff0a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bff0a.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_bff0a.dir/detect_cuda_version.cc.o -o cmTC_bff0a  -Wl,-rpath,/opt/cuda/lib64 /opt/cuda/lib64/libcudart.so
+        make[1]: Leaving directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        13.1
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:128 (try_run)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:188 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/utils.cmake:331 (cuda_select_nvcc_arch_flags)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:329 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    directories:
+      source: "/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp"
+      binary: "/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/libtorch/libtorch/share/cmake/Caffe2;/opt/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6c15c/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_6c15c.dir/build.make CMakeFiles/cmTC_6c15c.dir/build
+        make[1]: Entering directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_6c15c.dir/detect_cuda_compute_capabilities.cu.o
+        /opt/cuda/bin/nvcc -forward-unknown-to-host-compiler   -std=c++17 "--generate-code=arch=compute_75,code=[compute_75,sm_75]" -MD -MT CMakeFiles/cmTC_6c15c.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_6c15c.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_6c15c.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_6c15c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c15c.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_6c15c.dir/objects1.rsp -o cmTC_6c15c @CMakeFiles/cmTC_6c15c.dir/linkLibs.rsp -L"/opt/cuda/targets/x86_64-linux/lib/stubs" -L"/opt/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+      exitCode: 255
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:796 (find_path)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "path"
+    variable: "CUDA_TOOLKIT_INCLUDE"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "device_functions.h"
+    candidate_directories:
+      - "/opt/cuda/include/"
+      - "/opt/cuda/"
+    found: "/opt/cuda/include/"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:851 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDART_LIBRARY"
+    description: "\"cudart\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudart"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcudart.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:853 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cudart_static_LIBRARY"
+    description: "static CUDA runtime library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudart_static"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcudart_static.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:871 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cudadevrt_LIBRARY"
+    description: "\"cudadevrt\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudadevrt"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcudadevrt.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:908 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cupti_LIBRARY"
+    description: "\"cupti\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cupti"
+    candidate_directories:
+      - "/opt/cuda/extras/CUPTI/lib/x64/"
+      - "/opt/cuda/extras/CUPTI/lib64/"
+      - "/opt/cuda/extras/CUPTI/libx64/"
+      - "/opt/cuda/extras/CUPTI/lib/Win32/"
+      - "/opt/cuda/extras/CUPTI/lib/"
+      - "/opt/cuda/extras/CUPTI/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/extras/CUPTI/lib/x64/"
+      - "/opt/cuda/extras/CUPTI/lib64/"
+      - "/opt/cuda/extras/CUPTI/libx64/"
+      - "/opt/cuda/extras/CUPTI/lib/Win32/"
+      - "/opt/cuda/extras/CUPTI/lib/"
+      - "/opt/cuda/extras/CUPTI/libWin32/"
+      - "/opt/cuda/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:938 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDA_LIBRARY"
+    description: "\"cuda\" library (older versions only)."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cuda"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:833 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:938 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDA_LIBRARY"
+    description: "\"cuda\" library (older versions only)."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cuda"
+    candidate_directories:
+      - "/opt/libtorch/lib/"
+      - "/opt/libtorch/"
+      - "/home/posiedon/.config/emacs/bin/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/"
+      - "/home/posiedon/.local/share/omarchy/bin/"
+      - "/home/posiedon/.local/share/mise/shims/"
+      - "/home/posiedon/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/cuda/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+      - "/usr/lib/nvidia-current/"
+    searched_directories:
+      - "/opt/libtorch/lib/"
+      - "/opt/libtorch/"
+      - "/home/posiedon/.config/emacs/bin/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/"
+      - "/home/posiedon/.local/share/omarchy/bin/"
+      - "/home/posiedon/.local/share/mise/shims/"
+      - "/home/posiedon/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/cuda/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libcuda.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:956 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cufft_LIBRARY"
+    description: "\"cufft\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cufft"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcufft.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:957 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cublas_LIBRARY"
+    description: "\"cublas\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cublas"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcublas.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:958 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cublasLt_LIBRARY"
+    description: "\"cublasLt\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cublasLt"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcublasLt.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:960 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cusparse_LIBRARY"
+    description: "\"cusparse\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cusparse"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcusparse.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:961 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_curand_LIBRARY"
+    description: "\"curand\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "curand"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcurand.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:968 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_nppc_LIBRARY"
+    description: "\"nppc\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nppc"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libnppc.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:979 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_npps_LIBRARY"
+    description: "\"npps\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "npps"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libnpps.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:982 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cusolver_LIBRARY"
+    description: "\"cusolver\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cusolver"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcusolver.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/FindCUDAToolkit.cmake:869 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/FindCUDAToolkit.cmake:1035 (_CUDAToolkit_find_and_add_import_lib)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:68 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cupti_LIBRARY"
+    description: "\"cupti\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cupti"
+    candidate_directories:
+      - "/opt/cuda/lib/nvidia/current/"
+      - "/opt/cuda/lib/lib64/"
+      - "/opt/cuda/lib/lib/x64/"
+      - "/opt/cuda/lib/lib/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib64/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/nvidia/current/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/../extras/CUPTI/lib64/"
+      - "/opt/cuda/../extras/CUPTI/lib/"
+      - "/opt/cuda/"
+      - "/opt/libtorch/lib/nvidia/current/"
+      - "/opt/libtorch/lib/lib64/"
+      - "/opt/libtorch/lib/lib/x64/"
+      - "/opt/libtorch/lib/lib/"
+      - "/opt/libtorch/lib/../extras/CUPTI/lib64/"
+      - "/opt/libtorch/lib/../extras/CUPTI/lib/"
+      - "/opt/libtorch/lib/"
+      - "/opt/libtorch/nvidia/current/"
+      - "/opt/libtorch/lib64/"
+      - "/opt/libtorch/lib/x64/"
+      - "/opt/libtorch/lib/"
+      - "/opt/libtorch/../extras/CUPTI/lib64/"
+      - "/opt/libtorch/../extras/CUPTI/lib/"
+      - "/opt/libtorch/"
+      - "/opt/cuda/lib/nvidia/current/"
+      - "/opt/cuda/lib/lib64/"
+      - "/opt/cuda/lib/lib/x64/"
+      - "/opt/cuda/lib/lib/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib64/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/nvidia/current/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/../extras/CUPTI/lib64/"
+      - "/opt/cuda/../extras/CUPTI/lib/"
+      - "/opt/cuda/"
+      - "/home/posiedon/.config/emacs/bin/nvidia/current/"
+      - "/home/posiedon/.config/emacs/bin/lib64/"
+      - "/home/posiedon/.config/emacs/bin/lib/x64/"
+      - "/home/posiedon/.config/emacs/bin/lib/"
+      - "/home/posiedon/.config/emacs/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.config/emacs/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.config/emacs/bin/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/nvidia/current/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/lib64/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/lib/x64/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/lib/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/nvidia/current/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/lib64/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/lib/x64/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/lib/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/"
+      - "/home/posiedon/.local/share/omarchy/bin/nvidia/current/"
+      - "/home/posiedon/.local/share/omarchy/bin/lib64/"
+      - "/home/posiedon/.local/share/omarchy/bin/lib/x64/"
+      - "/home/posiedon/.local/share/omarchy/bin/lib/"
+      - "/home/posiedon/.local/share/omarchy/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/omarchy/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/omarchy/bin/"
+      - "/home/posiedon/.local/share/mise/shims/nvidia/current/"
+      - "/home/posiedon/.local/share/mise/shims/lib64/"
+      - "/home/posiedon/.local/share/mise/shims/lib/x64/"
+      - "/home/posiedon/.local/share/mise/shims/lib/"
+      - "/home/posiedon/.local/share/mise/shims/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/mise/shims/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/mise/shims/"
+      - "/home/posiedon/.local/bin/nvidia/current/"
+      - "/home/posiedon/.local/bin/lib64/"
+      - "/home/posiedon/.local/bin/lib/x64/"
+      - "/home/posiedon/.local/bin/lib/"
+      - "/home/posiedon/.local/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/bin/"
+      - "/usr/local/sbin/nvidia/current/"
+      - "/usr/local/sbin/lib64/"
+      - "/usr/local/sbin/lib/x64/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/../extras/CUPTI/lib64/"
+      - "/usr/local/sbin/../extras/CUPTI/lib/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/nvidia/current/"
+      - "/usr/local/bin/lib64/"
+      - "/usr/local/bin/lib/x64/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/../extras/CUPTI/lib64/"
+      - "/usr/local/bin/../extras/CUPTI/lib/"
+      - "/usr/local/bin/"
+      - "/usr/bin/nvidia/current/"
+      - "/usr/bin/lib64/"
+      - "/usr/bin/lib/x64/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/../extras/CUPTI/lib64/"
+      - "/usr/bin/../extras/CUPTI/lib/"
+      - "/usr/bin/"
+      - "/opt/cuda/bin/nvidia/current/"
+      - "/opt/cuda/bin/lib64/"
+      - "/opt/cuda/bin/lib/x64/"
+      - "/opt/cuda/bin/lib/"
+      - "/opt/cuda/bin/../extras/CUPTI/lib64/"
+      - "/opt/cuda/bin/../extras/CUPTI/lib/"
+      - "/opt/cuda/bin/"
+      - "/usr/lib/jvm/default/bin/nvidia/current/"
+      - "/usr/lib/jvm/default/bin/lib64/"
+      - "/usr/lib/jvm/default/bin/lib/x64/"
+      - "/usr/lib/jvm/default/bin/lib/"
+      - "/usr/lib/jvm/default/bin/../extras/CUPTI/lib64/"
+      - "/usr/lib/jvm/default/bin/../extras/CUPTI/lib/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/nvidia/current/"
+      - "/usr/bin/site_perl/lib64/"
+      - "/usr/bin/site_perl/lib/x64/"
+      - "/usr/bin/site_perl/lib/"
+      - "/usr/bin/site_perl/../extras/CUPTI/lib64/"
+      - "/usr/bin/site_perl/../extras/CUPTI/lib/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/nvidia/current/"
+      - "/usr/bin/vendor_perl/lib64/"
+      - "/usr/bin/vendor_perl/lib/x64/"
+      - "/usr/bin/vendor_perl/lib/"
+      - "/usr/bin/vendor_perl/../extras/CUPTI/lib64/"
+      - "/usr/bin/vendor_perl/../extras/CUPTI/lib/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/nvidia/current/"
+      - "/usr/bin/core_perl/lib64/"
+      - "/usr/bin/core_perl/lib/x64/"
+      - "/usr/bin/core_perl/lib/"
+      - "/usr/bin/core_perl/../extras/CUPTI/lib64/"
+      - "/usr/bin/core_perl/../extras/CUPTI/lib/"
+      - "/usr/bin/core_perl/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/nvidia/current/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/lib64/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/lib/x64/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/lib/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/"
+      - "/usr/local/lib/nvidia/current/"
+      - "/usr/local/lib/lib64/"
+      - "/usr/local/lib/lib/x64/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/../extras/CUPTI/lib64/"
+      - "/usr/local/lib/../extras/CUPTI/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/nvidia/current/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/x64/"
+      - "/usr/local/lib/"
+      - "/usr/local/../extras/CUPTI/lib64/"
+      - "/usr/local/../extras/CUPTI/lib/"
+      - "/usr/local/"
+      - "/usr/lib/nvidia/current/"
+      - "/usr/lib/lib64/"
+      - "/usr/lib/lib/x64/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/../extras/CUPTI/lib64/"
+      - "/usr/lib/../extras/CUPTI/lib/"
+      - "/usr/lib/"
+      - "/usr/nvidia/current/"
+      - "/usr/lib64/"
+      - "/usr/lib/x64/"
+      - "/usr/lib/"
+      - "/usr/../extras/CUPTI/lib64/"
+      - "/usr/../extras/CUPTI/lib/"
+      - "/usr/"
+      - "/lib/nvidia/current/"
+      - "/lib/lib64/"
+      - "/lib/lib/x64/"
+      - "/lib/lib/"
+      - "/lib/../extras/CUPTI/lib64/"
+      - "/lib/../extras/CUPTI/lib/"
+      - "/lib/"
+      - "/usr/X11R6/lib/nvidia/current/"
+      - "/usr/X11R6/lib/lib64/"
+      - "/usr/X11R6/lib/lib/x64/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/../extras/CUPTI/lib64/"
+      - "/usr/X11R6/lib/../extras/CUPTI/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/nvidia/current/"
+      - "/usr/X11R6/lib64/"
+      - "/usr/X11R6/lib/x64/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/../extras/CUPTI/lib64/"
+      - "/usr/X11R6/../extras/CUPTI/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/nvidia/current/"
+      - "/usr/pkg/lib/lib64/"
+      - "/usr/pkg/lib/lib/x64/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/../extras/CUPTI/lib64/"
+      - "/usr/pkg/lib/../extras/CUPTI/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/nvidia/current/"
+      - "/usr/pkg/lib64/"
+      - "/usr/pkg/lib/x64/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/../extras/CUPTI/lib64/"
+      - "/usr/pkg/../extras/CUPTI/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/nvidia/current/"
+      - "/opt/lib/lib64/"
+      - "/opt/lib/lib/x64/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/../extras/CUPTI/lib64/"
+      - "/opt/lib/../extras/CUPTI/lib/"
+      - "/opt/lib/"
+      - "/opt/nvidia/current/"
+      - "/opt/lib64/"
+      - "/opt/lib/x64/"
+      - "/opt/lib/"
+      - "/opt/../extras/CUPTI/lib64/"
+      - "/opt/../extras/CUPTI/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/nvidia/current/"
+      - "/usr/lib/X11/lib64/"
+      - "/usr/lib/X11/lib/x64/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/../extras/CUPTI/lib64/"
+      - "/usr/lib/X11/../extras/CUPTI/lib/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/opt/cuda/lib/nvidia/current/"
+      - "/opt/cuda/lib/lib64/"
+      - "/opt/cuda/lib/lib/x64/"
+      - "/opt/cuda/lib/lib/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib64/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib/"
+    found: "/opt/cuda/lib/libcupti.so"
+    search_context:
+      package_stack:
+        -
+          package_paths:
+            - "/opt/cuda"
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/cuda/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.config/emacs/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:108 (try_run)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    directories:
+      source: "/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp"
+      binary: "/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/libtorch/libtorch/share/cmake/Caffe2;/opt/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2b1fb/fast
+        make[1]: Entering directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        /usr/bin/make  -f CMakeFiles/cmTC_2b1fb.dir/build.make CMakeFiles/cmTC_2b1fb.dir/build
+        make[2]: Entering directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_2b1fb.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/opt/cuda/include -std=gnu++17 -o CMakeFiles/cmTC_2b1fb.dir/detect_cuda_version.cc.o -c /home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/detect_cuda_version.cc
+        Linking CXX executable cmTC_2b1fb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b1fb.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_2b1fb.dir/detect_cuda_version.cc.o -o cmTC_2b1fb  -Wl,-rpath,/opt/cuda/lib64 /opt/cuda/lib64/libcudart.so
+        make[2]: Leaving directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        make[1]: Leaving directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        13.1
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:128 (try_run)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:188 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/utils.cmake:331 (cuda_select_nvcc_arch_flags)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:329 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    directories:
+      source: "/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp"
+      binary: "/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/libtorch/libtorch/share/cmake/Caffe2;/opt/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ca0f8/fast
+        make[1]: Entering directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        /usr/bin/make  -f CMakeFiles/cmTC_ca0f8.dir/build.make CMakeFiles/cmTC_ca0f8.dir/build
+        make[2]: Entering directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_ca0f8.dir/detect_cuda_compute_capabilities.cu.o
+        /opt/cuda/bin/nvcc -forward-unknown-to-host-compiler   -std=c++17 "--generate-code=arch=compute_75,code=[compute_75,sm_75]" -MD -MT CMakeFiles/cmTC_ca0f8.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_ca0f8.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_ca0f8.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_ca0f8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca0f8.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_ca0f8.dir/objects1.rsp -o cmTC_ca0f8 @CMakeFiles/cmTC_ca0f8.dir/linkLibs.rsp -L"/opt/cuda/targets/x86_64-linux/lib/stubs" -L"/opt/cuda/targets/x86_64-linux/lib"
+        make[2]: Leaving directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        make[1]: Leaving directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+      exitCode: 255
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:796 (find_path)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "path"
+    variable: "CUDA_TOOLKIT_INCLUDE"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "device_functions.h"
+    candidate_directories:
+      - "/opt/cuda/include/"
+      - "/opt/cuda/"
+    found: "/opt/cuda/include/"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:851 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDART_LIBRARY"
+    description: "\"cudart\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudart"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcudart.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:853 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cudart_static_LIBRARY"
+    description: "static CUDA runtime library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudart_static"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcudart_static.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:871 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cudadevrt_LIBRARY"
+    description: "\"cudadevrt\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cudadevrt"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcudadevrt.a"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:908 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cupti_LIBRARY"
+    description: "\"cupti\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cupti"
+    candidate_directories:
+      - "/opt/cuda/extras/CUPTI/lib/x64/"
+      - "/opt/cuda/extras/CUPTI/lib64/"
+      - "/opt/cuda/extras/CUPTI/libx64/"
+      - "/opt/cuda/extras/CUPTI/lib/Win32/"
+      - "/opt/cuda/extras/CUPTI/lib/"
+      - "/opt/cuda/extras/CUPTI/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/extras/CUPTI/lib/x64/"
+      - "/opt/cuda/extras/CUPTI/lib64/"
+      - "/opt/cuda/extras/CUPTI/libx64/"
+      - "/opt/cuda/extras/CUPTI/lib/Win32/"
+      - "/opt/cuda/extras/CUPTI/lib/"
+      - "/opt/cuda/extras/CUPTI/libWin32/"
+      - "/opt/cuda/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:938 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDA_LIBRARY"
+    description: "\"cuda\" library (older versions only)."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cuda"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:833 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:938 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_CUDA_LIBRARY"
+    description: "\"cuda\" library (older versions only)."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cuda"
+    candidate_directories:
+      - "/opt/libtorch/lib/"
+      - "/opt/libtorch/"
+      - "/home/posiedon/.config/emacs/bin/"
+      - "/home/posiedon/.local/share/omarchy/bin/"
+      - "/home/posiedon/.local/share/mise/shims/"
+      - "/home/posiedon/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/"
+      - "/usr/lib/nvidia-current/"
+    searched_directories:
+      - "/opt/libtorch/lib/"
+      - "/opt/libtorch/"
+      - "/home/posiedon/.config/emacs/bin/"
+      - "/home/posiedon/.local/share/omarchy/bin/"
+      - "/home/posiedon/.local/share/mise/shims/"
+      - "/home/posiedon/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+    found: "/usr/lib/libcuda.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:956 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cufft_LIBRARY"
+    description: "\"cufft\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cufft"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcufft.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:957 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cublas_LIBRARY"
+    description: "\"cublas\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cublas"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcublas.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:958 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cublasLt_LIBRARY"
+    description: "\"cublasLt\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cublasLt"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcublasLt.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:960 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cusparse_LIBRARY"
+    description: "\"cusparse\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cusparse"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcusparse.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:961 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_curand_LIBRARY"
+    description: "\"curand\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "curand"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcurand.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:968 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_nppc_LIBRARY"
+    description: "\"nppc\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nppc"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libnppc.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:979 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_npps_LIBRARY"
+    description: "\"npps\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "npps"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libnpps.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:822 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:842 (cuda_find_library_local_first_with_path_ext)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:948 (cuda_find_library_local_first)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake:982 (find_cuda_helper_libs)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake:10 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:29 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cusolver_LIBRARY"
+    description: "\"cusolver\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cusolver"
+    candidate_directories:
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/libx64/"
+      - "/opt/cuda/lib/Win32/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/libWin32/"
+      - "/opt/cuda/"
+    searched_directories:
+      - "/opt/cuda/lib/x64/"
+    found: "/opt/cuda/lib64/libcusolver.so"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/FindCUDAToolkit.cmake:869 (find_library)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/FindCUDAToolkit.cmake:1035 (_CUDAToolkit_find_and_add_import_lib)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:68 (find_package)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    mode: "library"
+    variable: "CUDA_cupti_LIBRARY"
+    description: "\"cupti\" library"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "cupti"
+    candidate_directories:
+      - "/opt/cuda/lib/nvidia/current/"
+      - "/opt/cuda/lib/lib64/"
+      - "/opt/cuda/lib/lib/x64/"
+      - "/opt/cuda/lib/lib/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib64/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/nvidia/current/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/../extras/CUPTI/lib64/"
+      - "/opt/cuda/../extras/CUPTI/lib/"
+      - "/opt/cuda/"
+      - "/opt/libtorch/lib/nvidia/current/"
+      - "/opt/libtorch/lib/lib64/"
+      - "/opt/libtorch/lib/lib/x64/"
+      - "/opt/libtorch/lib/lib/"
+      - "/opt/libtorch/lib/../extras/CUPTI/lib64/"
+      - "/opt/libtorch/lib/../extras/CUPTI/lib/"
+      - "/opt/libtorch/lib/"
+      - "/opt/libtorch/nvidia/current/"
+      - "/opt/libtorch/lib64/"
+      - "/opt/libtorch/lib/x64/"
+      - "/opt/libtorch/lib/"
+      - "/opt/libtorch/../extras/CUPTI/lib64/"
+      - "/opt/libtorch/../extras/CUPTI/lib/"
+      - "/opt/libtorch/"
+      - "/opt/cuda/lib/nvidia/current/"
+      - "/opt/cuda/lib/lib64/"
+      - "/opt/cuda/lib/lib/x64/"
+      - "/opt/cuda/lib/lib/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib64/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/nvidia/current/"
+      - "/opt/cuda/lib64/"
+      - "/opt/cuda/lib/x64/"
+      - "/opt/cuda/lib/"
+      - "/opt/cuda/../extras/CUPTI/lib64/"
+      - "/opt/cuda/../extras/CUPTI/lib/"
+      - "/opt/cuda/"
+      - "/home/posiedon/.config/emacs/bin/nvidia/current/"
+      - "/home/posiedon/.config/emacs/bin/lib64/"
+      - "/home/posiedon/.config/emacs/bin/lib/x64/"
+      - "/home/posiedon/.config/emacs/bin/lib/"
+      - "/home/posiedon/.config/emacs/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.config/emacs/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.config/emacs/bin/"
+      - "/home/posiedon/.local/share/omarchy/bin/nvidia/current/"
+      - "/home/posiedon/.local/share/omarchy/bin/lib64/"
+      - "/home/posiedon/.local/share/omarchy/bin/lib/x64/"
+      - "/home/posiedon/.local/share/omarchy/bin/lib/"
+      - "/home/posiedon/.local/share/omarchy/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/omarchy/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/omarchy/bin/"
+      - "/home/posiedon/.local/share/mise/shims/nvidia/current/"
+      - "/home/posiedon/.local/share/mise/shims/lib64/"
+      - "/home/posiedon/.local/share/mise/shims/lib/x64/"
+      - "/home/posiedon/.local/share/mise/shims/lib/"
+      - "/home/posiedon/.local/share/mise/shims/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/mise/shims/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/mise/shims/"
+      - "/home/posiedon/.local/bin/nvidia/current/"
+      - "/home/posiedon/.local/bin/lib64/"
+      - "/home/posiedon/.local/bin/lib/x64/"
+      - "/home/posiedon/.local/bin/lib/"
+      - "/home/posiedon/.local/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/bin/"
+      - "/usr/local/sbin/nvidia/current/"
+      - "/usr/local/sbin/lib64/"
+      - "/usr/local/sbin/lib/x64/"
+      - "/usr/local/sbin/lib/"
+      - "/usr/local/sbin/../extras/CUPTI/lib64/"
+      - "/usr/local/sbin/../extras/CUPTI/lib/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/nvidia/current/"
+      - "/usr/local/bin/lib64/"
+      - "/usr/local/bin/lib/x64/"
+      - "/usr/local/bin/lib/"
+      - "/usr/local/bin/../extras/CUPTI/lib64/"
+      - "/usr/local/bin/../extras/CUPTI/lib/"
+      - "/usr/local/bin/"
+      - "/usr/bin/nvidia/current/"
+      - "/usr/bin/lib64/"
+      - "/usr/bin/lib/x64/"
+      - "/usr/bin/lib/"
+      - "/usr/bin/../extras/CUPTI/lib64/"
+      - "/usr/bin/../extras/CUPTI/lib/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/nvidia/current/"
+      - "/usr/lib/jvm/default/bin/lib64/"
+      - "/usr/lib/jvm/default/bin/lib/x64/"
+      - "/usr/lib/jvm/default/bin/lib/"
+      - "/usr/lib/jvm/default/bin/../extras/CUPTI/lib64/"
+      - "/usr/lib/jvm/default/bin/../extras/CUPTI/lib/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/nvidia/current/"
+      - "/usr/bin/site_perl/lib64/"
+      - "/usr/bin/site_perl/lib/x64/"
+      - "/usr/bin/site_perl/lib/"
+      - "/usr/bin/site_perl/../extras/CUPTI/lib64/"
+      - "/usr/bin/site_perl/../extras/CUPTI/lib/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/nvidia/current/"
+      - "/usr/bin/vendor_perl/lib64/"
+      - "/usr/bin/vendor_perl/lib/x64/"
+      - "/usr/bin/vendor_perl/lib/"
+      - "/usr/bin/vendor_perl/../extras/CUPTI/lib64/"
+      - "/usr/bin/vendor_perl/../extras/CUPTI/lib/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/nvidia/current/"
+      - "/usr/bin/core_perl/lib64/"
+      - "/usr/bin/core_perl/lib/x64/"
+      - "/usr/bin/core_perl/lib/"
+      - "/usr/bin/core_perl/../extras/CUPTI/lib64/"
+      - "/usr/bin/core_perl/../extras/CUPTI/lib/"
+      - "/usr/bin/core_perl/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/nvidia/current/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/lib64/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/lib/x64/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/lib/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/nvidia/current/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/lib64/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/lib/x64/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/lib/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/nvidia/current/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/lib64/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/lib/x64/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/lib/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/../extras/CUPTI/lib64/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/../extras/CUPTI/lib/"
+      - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin/"
+      - "/usr/local/lib/nvidia/current/"
+      - "/usr/local/lib/lib64/"
+      - "/usr/local/lib/lib/x64/"
+      - "/usr/local/lib/lib/"
+      - "/usr/local/lib/../extras/CUPTI/lib64/"
+      - "/usr/local/lib/../extras/CUPTI/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/nvidia/current/"
+      - "/usr/local/lib64/"
+      - "/usr/local/lib/x64/"
+      - "/usr/local/lib/"
+      - "/usr/local/../extras/CUPTI/lib64/"
+      - "/usr/local/../extras/CUPTI/lib/"
+      - "/usr/local/"
+      - "/usr/lib/nvidia/current/"
+      - "/usr/lib/lib64/"
+      - "/usr/lib/lib/x64/"
+      - "/usr/lib/lib/"
+      - "/usr/lib/../extras/CUPTI/lib64/"
+      - "/usr/lib/../extras/CUPTI/lib/"
+      - "/usr/lib/"
+      - "/usr/nvidia/current/"
+      - "/usr/lib64/"
+      - "/usr/lib/x64/"
+      - "/usr/lib/"
+      - "/usr/../extras/CUPTI/lib64/"
+      - "/usr/../extras/CUPTI/lib/"
+      - "/usr/"
+      - "/lib/nvidia/current/"
+      - "/lib/lib64/"
+      - "/lib/lib/x64/"
+      - "/lib/lib/"
+      - "/lib/../extras/CUPTI/lib64/"
+      - "/lib/../extras/CUPTI/lib/"
+      - "/lib/"
+      - "/usr/X11R6/lib/nvidia/current/"
+      - "/usr/X11R6/lib/lib64/"
+      - "/usr/X11R6/lib/lib/x64/"
+      - "/usr/X11R6/lib/lib/"
+      - "/usr/X11R6/lib/../extras/CUPTI/lib64/"
+      - "/usr/X11R6/lib/../extras/CUPTI/lib/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/nvidia/current/"
+      - "/usr/X11R6/lib64/"
+      - "/usr/X11R6/lib/x64/"
+      - "/usr/X11R6/lib/"
+      - "/usr/X11R6/../extras/CUPTI/lib64/"
+      - "/usr/X11R6/../extras/CUPTI/lib/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/lib/nvidia/current/"
+      - "/usr/pkg/lib/lib64/"
+      - "/usr/pkg/lib/lib/x64/"
+      - "/usr/pkg/lib/lib/"
+      - "/usr/pkg/lib/../extras/CUPTI/lib64/"
+      - "/usr/pkg/lib/../extras/CUPTI/lib/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/nvidia/current/"
+      - "/usr/pkg/lib64/"
+      - "/usr/pkg/lib/x64/"
+      - "/usr/pkg/lib/"
+      - "/usr/pkg/../extras/CUPTI/lib64/"
+      - "/usr/pkg/../extras/CUPTI/lib/"
+      - "/usr/pkg/"
+      - "/opt/lib/nvidia/current/"
+      - "/opt/lib/lib64/"
+      - "/opt/lib/lib/x64/"
+      - "/opt/lib/lib/"
+      - "/opt/lib/../extras/CUPTI/lib64/"
+      - "/opt/lib/../extras/CUPTI/lib/"
+      - "/opt/lib/"
+      - "/opt/nvidia/current/"
+      - "/opt/lib64/"
+      - "/opt/lib/x64/"
+      - "/opt/lib/"
+      - "/opt/../extras/CUPTI/lib64/"
+      - "/opt/../extras/CUPTI/lib/"
+      - "/opt/"
+      - "/usr/lib/X11/nvidia/current/"
+      - "/usr/lib/X11/lib64/"
+      - "/usr/lib/X11/lib/x64/"
+      - "/usr/lib/X11/lib/"
+      - "/usr/lib/X11/../extras/CUPTI/lib64/"
+      - "/usr/lib/X11/../extras/CUPTI/lib/"
+      - "/usr/lib/X11/"
+    searched_directories:
+      - "/opt/cuda/lib/nvidia/current/"
+      - "/opt/cuda/lib/lib64/"
+      - "/opt/cuda/lib/lib/x64/"
+      - "/opt/cuda/lib/lib/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib64/"
+      - "/opt/cuda/lib/../extras/CUPTI/lib/"
+    found: "/opt/cuda/lib/libcupti.so"
+    search_context:
+      package_stack:
+        -
+          package_paths:
+            - "/opt/cuda"
+      CMAKE_PREFIX_PATH:
+        - "/opt/libtorch"
+      ENV{PATH}:
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.config/emacs/bin"
+        - "/home/posiedon/.local/share/omarchy/bin"
+        - "/home/posiedon/.local/share/mise/shims"
+        - "/home/posiedon/.local/share/omarchy/bin/"
+        - "/home/posiedon/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/share/JetBrains/Toolbox/scripts"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/bin"
+        - "/home/posiedon/.local/share/mise/installs/java/25.0.0/bin"
+        - "/home/posiedon/.local/share/mise/installs/python/3.13.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:108 (try_run)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    directories:
+      source: "/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp"
+      binary: "/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/libtorch/libtorch/share/cmake/Caffe2;/opt/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bfd84/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_bfd84.dir/build.make CMakeFiles/cmTC_bfd84.dir/build
+        make[1]: Entering directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_bfd84.dir/detect_cuda_version.cc.o
+        /usr/bin/c++  -I/opt/cuda/include -std=gnu++17 -o CMakeFiles/cmTC_bfd84.dir/detect_cuda_version.cc.o -c /home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/detect_cuda_version.cc
+        Linking CXX executable cmTC_bfd84
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfd84.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_bfd84.dir/detect_cuda_version.cc.o -o cmTC_bfd84  -Wl,-rpath,/opt/cuda/lib64 /opt/cuda/lib64/libcudart.so
+        make[1]: Leaving directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        13.1
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:128 (try_run)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:188 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/utils.cmake:331 (cuda_select_nvcc_arch_flags)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/public/cuda.cmake:329 (torch_cuda_get_nvcc_gencode_flag)"
+      - "/opt/libtorch/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "/opt/libtorch/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)"
+      - "CMakeLists.txt:10 (find_package)"
+    directories:
+      source: "/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp"
+      binary: "/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "75"
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/opt/libtorch/libtorch/share/cmake/Caffe2;/opt/libtorch/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a5568/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_a5568.dir/build.make CMakeFiles/cmTC_a5568.dir/build
+        make[1]: Entering directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        Building CUDA object CMakeFiles/cmTC_a5568.dir/detect_cuda_compute_capabilities.cu.o
+        /opt/cuda/bin/nvcc -forward-unknown-to-host-compiler   -std=c++17 "--generate-code=arch=compute_75,code=[compute_75,sm_75]" -MD -MT CMakeFiles/cmTC_a5568.dir/detect_cuda_compute_capabilities.cu.o -MF CMakeFiles/cmTC_a5568.dir/detect_cuda_compute_capabilities.cu.o.d -x cu -c /home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/detect_cuda_compute_capabilities.cu -o CMakeFiles/cmTC_a5568.dir/detect_cuda_compute_capabilities.cu.o
+        Linking CUDA executable cmTC_a5568
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5568.dir/link.txt --verbose=1
+        /usr/bin/g++ @CMakeFiles/cmTC_a5568.dir/objects1.rsp -o cmTC_a5568 @CMakeFiles/cmTC_a5568.dir/linkLibs.rsp -L"/opt/cuda/targets/x86_64-linux/lib/stubs" -L"/opt/cuda/targets/x86_64-linux/lib"
+        make[1]: Leaving directory '/home/posiedon/Desktop/Coding/poison-guard-monorepo/cpp_ingestion_core/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        8.9 
+      exitCode: 0
+...

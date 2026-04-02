@@ -45,7 +45,6 @@ ingestion_core: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o \
   /usr/lib32/libdl.so.2 \
   /usr/lib/libdl.so.2 \
-  /usr/lib/libm.so.6 \
   /usr/lib32/libpthread.so.0 \
   /usr/lib/libpthread.so.0 \
   /usr/lib/ld-linux-x86-64.so.2 \
@@ -172,8 +171,6 @@ CMakeFiles/ingestion_core.dir/src/zmq_client.cpp.o:
 /usr/lib32/libdl.so.2:
 
 /usr/lib/libdl.so.2:
-
-/usr/lib/libm.so.6:
 
 /usr/lib32/libpthread.so.0:
 

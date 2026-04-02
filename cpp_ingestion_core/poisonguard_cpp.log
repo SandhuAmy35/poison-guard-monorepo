@@ -1,0 +1,87 @@
+[2026-04-02 11:53:39.136] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 11:53:39.295] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 11:53:39.296] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 11:54:24.051] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 11:54:24.211] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 11:54:24.211] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 12:06:48.734] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 12:06:48.895] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 12:06:48.896] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 13:15:17.612] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 13:15:17.778] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 13:15:17.778] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 13:25:45.059] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 13:25:45.313] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 13:25:45.314] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 13:39:03.783] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 13:39:03.946] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 13:39:03.957] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 13:40:24.424] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 13:40:24.583] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 13:40:24.583] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 14:16:47.537] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 14:16:47.696] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 14:16:47.696] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 15:17:22.231] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 15:17:22.396] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 15:17:22.397] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 15:23:40.352] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 15:23:40.514] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 15:23:40.514] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 15:29:09.891] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 15:29:10.051] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 15:29:10.051] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 15:33:42.530] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 15:33:42.691] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 15:33:42.692] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 15:39:30.918] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 15:39:31.084] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 15:39:31.095] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 15:47:30.812] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 15:47:30.977] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 15:47:30.977] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 15:51:56.748] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 15:51:56.908] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 15:51:56.909] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 15:59:52.075] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 15:59:52.235] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 15:59:52.236] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:02:03.716] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:02:03.878] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 16:02:03.879] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:07:12.013] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:07:12.014] [INFO] [PROVENANCE] SHA-256: d2c693c72f2337100f18364cf54af2326e4ba5e4e66c458c2dabecb174ca1f5a
+[2026-04-02 16:07:12.015] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:21:10.434] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:21:10.452] [INFO] [PROVENANCE] SHA-256: 6e05f8fbff2d7642e9c0cd442a992d6316b0222714cc24a5e24f2a7d943327fd
+[2026-04-02 16:21:10.452] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:29:40.413] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:29:40.417] [INFO] [PROVENANCE] SHA-256: 6e05f8fbff2d7642e9c0cd442a992d6316b0222714cc24a5e24f2a7d943327fd
+[2026-04-02 16:29:40.417] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:29:44.538] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:29:44.699] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 16:29:44.699] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:31:42.175] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:31:42.336] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 16:31:42.336] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:32:23.965] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:32:23.967] [INFO] [PROVENANCE] SHA-256: d2c693c72f2337100f18364cf54af2326e4ba5e4e66c458c2dabecb174ca1f5a
+[2026-04-02 16:32:23.967] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:32:49.201] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:32:49.202] [INFO] [PROVENANCE] SHA-256: d2c693c72f2337100f18364cf54af2326e4ba5e4e66c458c2dabecb174ca1f5a
+[2026-04-02 16:32:49.203] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:34:13.373] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:34:13.535] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 16:34:13.536] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:38:02.041] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:38:02.204] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 16:38:02.205] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:43:11.704] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:43:11.864] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 16:43:11.865] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:46:52.213] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:46:52.213] [INFO] [PROVENANCE] SHA-256: d2c693c72f2337100f18364cf54af2326e4ba5e4e66c458c2dabecb174ca1f5a
+[2026-04-02 16:46:52.214] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555
+[2026-04-02 16:47:31.761] [INFO] [SYSTEM] Booting PoisonGuard Ingestion Engine
+[2026-04-02 16:47:31.926] [INFO] [PROVENANCE] SHA-256: fd7139200dbfcbed0b6742bbe05a4f1abce532c4fef20918228a651647a3e75d
+[2026-04-02 16:47:31.926] [INFO] [ZMQ_BRIDGE] Successfully connected to tcp://127.0.0.1:5555

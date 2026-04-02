@@ -6,7 +6,8 @@ import { Download, Activity, Play, RefreshCw } from 'lucide-react';
 const mockUmapData = Array.from({ length: 200 }, (_, i) => ({
   x: Math.random() * 80 - 40, y: Math.random() * 80 - 40,
   type: i < 15 ? 'poisoned' : 'clean', id: `SMPL-${1000 + i}`,
-  risk: i < 15 ? (Math.random() * 0.5 + 0.5).toFixed(2) : (Math.random() * 0.1).toFixed(2)
+  risk: i < 15 ? (Math.random() * 0.5 + 0.5).toFixed(2) : (Math.random() * 0.1).toFixed(2),
+  reason: 'Simulated Data'
 }));
 
 const mockInfluenceData = Array.from({ length: 15 }, (_, i) => ({
@@ -37,11 +38,33 @@ const VisualizationDashboard = () => {
         try {
           const payload = JSON.parse(event.data);
           if (payload.type === 'TELEMETRY_UPDATE') {
-            setTelemetry(payload.data);
-            if (payload.data.influence_scores) setInfluenceData(payload.data.influence_scores);
-            if (payload.data.umap_points) {
-              setOriginalUmapData(payload.data.umap_points);
-              if (!isSimulatingRef.current) setUmapData(payload.data.umap_points);
+            
+            // --- THE GLUE: INCREMENT THREAT COUNTER ---
+            setTelemetry(prev => ({
+              ...prev,
+              active_threats: payload.data.active_threats ? prev.active_threats + 1 : prev.active_threats
+            }));
+
+            // --- THE GLUE: MAP LIVE C++ VECTORS TO SCATTER CHART ---
+            if (payload.data.cluster_delta) {
+              const vec = payload.data.cluster_delta;
+              const isThreat = payload.data.active_threats > 0;
+              
+              const newPoint = {
+                x: (vec[0] * 100) - 50, // Center on plot
+                y: (vec[1] * 100) - 50, // Center on plot
+                type: isThreat ? 'poisoned' : 'clean',
+                id: payload.data.batch_id,
+                risk: payload.data.rl_reward.toFixed(2),
+                // Extract just the action log (e.g. "False Alarm!") for the table
+                reason: payload.data.rag_explanation.split(']')[0].replace('[', '').trim()
+              };
+
+              setOriginalUmapData(prev => {
+                const next = [...prev, newPoint].slice(-150); // Rolling buffer
+                if (!isSimulatingRef.current) setUmapData(next);
+                return next;
+              });
             }
           }
         } catch (e) {}
@@ -56,8 +79,9 @@ const VisualizationDashboard = () => {
     }
   }, [fallbackToMock]);
 
+  // --- THE GLUE: POPULATE TABLE WITH LIVE RAG DATA ---
   useEffect(() => { 
-    setTableData(originalUmapData.filter(d => d.type === 'poisoned').map((d, i) => ({ ...d, reason: ['Z-Score Anomaly', 'Spectral Signature', 'Activation Cluster Outlier'][i % 3] }))); 
+    setTableData(originalUmapData.filter(d => d.type === 'poisoned')); 
   }, [originalUmapData]);
 
   const handleDownload = () => {
@@ -200,7 +224,7 @@ const VisualizationDashboard = () => {
                           {row.risk}
                         </span>
                       </td>
-                      <td className="py-3 text-slate-400 group-hover:text-slate-200 transition-colors text-xs">{row.reason}</td>
+                      <td className="py-3 text-slate-400 group-hover:text-slate-200 transition-colors text-xs truncate max-w-[200px]">{row.reason}</td>
                     </tr>
                   ))}
                 </tbody>
