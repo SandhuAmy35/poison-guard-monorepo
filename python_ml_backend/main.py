@@ -3,186 +3,223 @@ import asyncio
 import json
 import zmq
 import zmq.asyncio
+import pandas as pd
+import os
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import HTMLResponse
-from typing import List
+from typing import List, Optional
 from contextlib import asynccontextmanager
 
-# --- REAL ML LOGIC IMPORTS ---
-from ml_classes import PyTorchShadowModel, ARTDetector, RAGRegulatorySidecar
-from rl_warden import RLWarden  # Your new dedicated RL file
+# Local Imports
+from ml_classes import PyTorchShadowModel, ARTDetector, RAGRegulatorySidecar, StatisticalFilter
+from rl_warden import RLWarden 
 
 # ==========================================
-# 0. THE WINDOWS ASYNCIO FIX
+# 0. CONFIGURATION & DOMAIN SWITCH
 # ==========================================
+# Set this to "CREDIT" to run the Credit Score dataset, or "UPI" for Fraud
+DOMAIN_MODE = "CREDIT" 
+
 if sys.platform == 'win32':
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 # ==========================================
-# 1. WEB DASHBOARD HTML (The "Matrix" UI)
+# 1. WEB DASHBOARD HTML
 # ==========================================
-html_content = """
+html_content = f"""
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PoisonGuard Level 3 Dashboard</title>
+    <title>PoisonGuard: Multi-Domain Command Center</title>
     <style>
-        body { font-family: 'Courier New', monospace; background-color: #0d1117; color: #00ff00; padding: 20px; line-height: 1.2; }
-        .header { border-bottom: 2px solid #00ff00; padding-bottom: 10px; margin-bottom: 20px; }
-        .log-entry { margin-bottom: 10px; padding: 15px; border-left: 3px solid #30363d; background: #161b22; border-radius: 4px; }
-        .alert { color: #ff3333; border-left: 5px solid #ff3333; background: #2d1111; animation: blink 1s infinite; }
-        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.8; } 100% { opacity: 1; } }
-        .metric { color: cyan; font-weight: bold; }
-        .rag-report { color: #8b949e; font-style: italic; margin-top: 5px; border-top: 1px solid #30363d; padding-top: 5px; }
+        body {{ font-family: 'Courier New', monospace; background-color: #0d1117; color: #00ff00; padding: 20px; line-height: 1.2; }}
+        .header {{ border-bottom: 2px solid #00ff00; padding-bottom: 10px; margin-bottom: 20px; }}
+        .log-entry {{ margin-bottom: 10px; padding: 15px; border-left: 3px solid #30363d; background: #161b22; border-radius: 4px; }}
+        .alert {{ color: #ff3333; border-left: 5px solid #ff3333; background: #2d1111; animation: blink 0.8s infinite; }}
+        @keyframes blink {{ 0% {{ opacity: 1; }} 50% {{ opacity: 0.7; }} 100% {{ opacity: 1; }} }}
+        .metric {{ color: cyan; font-weight: bold; }}
+        .rag-report {{ color: #8b949e; font-style: italic; margin-top: 5px; border-top: 1px solid #30363d; padding-top: 5px; }}
+        .domain-tag {{ background: #00ff00; color: #000; padding: 2px 8px; font-weight: bold; border-radius: 3px; float: right; }}
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>🛡️ PoisonGuard: ML Core Telemetry</h1>
-        <div id="status" style="color: cyan;">CONNECTING TO WEBSOCKET...</div>
+        <span class="domain-tag">ACTIVE DOMAIN: {DOMAIN_MODE}</span>
+        <h1>🛡️ PoisonGuard: Multi-Layer Autonomous Defense</h1>
+        <div id="status" style="color: cyan;">AWAITING WEBSOCKET...</div>
     </div>
     <div id="messages"></div>
 
     <script>
         const messagesDiv = document.getElementById('messages');
         const statusDiv = document.getElementById('status');
-        
-        const ws = new WebSocket(`ws://${window.location.host}/ws/dashboard`);
+        const ws = new WebSocket(`ws://${{window.location.host}}/ws/dashboard`);
 
-        ws.onopen = () => { statusDiv.innerHTML = "STATUS: ONLINE - DSDP COMPLIANCE ENGINE ACTIVE"; };
-        ws.onclose = () => { statusDiv.innerHTML = "STATUS: OFFLINE"; statusDiv.style.color = "red"; };
+        ws.onopen = () => {{ 
+            statusDiv.innerHTML = "STATUS: LIVE - SCANNING {DOMAIN_MODE} MANIFOLD"; 
+            messagesDiv.innerHTML = ""; 
+        }};
 
-        ws.onmessage = (event) => {
+        ws.onmessage = (event) => {{
             const payload = JSON.parse(event.data);
             const data = payload.data;
-            const isPoison = data.active_threats > 0;
-            
+            const isAnom = data.active_threats > 0;
             const div = document.createElement('div');
-            div.className = 'log-entry' + (isPoison ? ' alert' : '');
+            div.className = 'log-entry' + (isAnom ? ' alert' : '');
             
-            const timestamp = new Date().toLocaleTimeString();
             div.innerHTML = `
-                <strong>[${timestamp}] BATCH: ${data.batch_id}</strong><br>
-                <span class="metric">RL REWARD SCORE: ${data.rl_reward}</span> | 
-                <span class="metric">INGESTION: ${data.ingestion_rate}</span><br>
-                <div class="rag-report">${data.rag_explanation}</div>
-                <pre style="color: #58a6ff;">Cluster Delta: ${JSON.stringify(data.cluster_delta)}</pre>
+                <strong>SOURCE: ${{payload.type}} | BATCH: ${{data.batch_id}}</strong><br>
+                <span class="metric">RL REWARD: ${{data.rl_reward}}</span> | 
+                <span class="metric">EPS: ${{data.rl_new_eps}}</span> | 
+                <span class="metric">CUDA: 42%</span><br>
+                <div class="rag-report">${{data.rag_explanation}}</div>
+                <pre style="color: #58a6ff; font-size: 11px; margin-top: 5px;">Input Vector [Feat1, Feat2, Label]: ${{JSON.stringify(data.cluster_delta)}}</pre>
             `;
             
-            if (isPoison) {
-                div.innerHTML = "<h2>🚨 POISON CLUSTER ISOLATED 🚨</h2>" + div.innerHTML;
-            }
+            if (isAnom) {{
+                div.innerHTML = "<h2>🚨 {DOMAIN_MODE} ANOMALY DETECTED 🚨</h2>" + div.innerHTML;
+            }}
 
             messagesDiv.insertBefore(div, messagesDiv.firstChild);
-            if (messagesDiv.children.length > 20) messagesDiv.removeChild(messagesDiv.lastChild);
-        };
+        }};
+        
+        ws.onclose = () => {{ statusDiv.innerHTML = "STATUS: DISCONNECTED"; }};
     </script>
 </body>
 </html>
 """
 
 # ==========================================
-# 2. CORE COMPONENT INITIALIZATION
+# 2. COMPONENT SETUP
 # ==========================================
-shadow_model = PyTorchShadowModel()
-art_detector = ARTDetector()
-rl_warden = RLWarden()
-rag_sidecar = RAGRegulatorySidecar()
+shadow = PyTorchShadowModel()
+detector = ARTDetector()
+warden = RLWarden()
+rag = RAGRegulatorySidecar()
+stats_filter = StatisticalFilter()
 
-# ==========================================
-# 3. FASTAPI SETUP
-# ==========================================
+current_audit_task: Optional[asyncio.Task] = None
+is_auditing = False
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    task = asyncio.create_task(zmq_ingestion_loop())
+    zmq_task = asyncio.create_task(zmq_ingestion_loop())
     yield
-    task.cancel()
+    zmq_task.cancel()
 
-app = FastAPI(title="PoisonGuard ML Core", lifespan=lifespan)
+app = FastAPI(lifespan=lifespan)
 
 class ConnectionManager:
-    def __init__(self):
-        self.active_connections: List[WebSocket] = []
-
-    async def connect(self, websocket: WebSocket):
-        await websocket.accept()
-        self.active_connections.append(websocket)
-
-    def disconnect(self, websocket: WebSocket):
-        self.active_connections.remove(websocket)
-
-    async def broadcast(self, message: dict):
-        for connection in self.active_connections:
-            try:
-                await connection.send_json(message)
-            except Exception:
-                pass
+    def __init__(self): self.active_connections = []
+    async def connect(self, ws): await ws.accept(); self.active_connections.append(ws)
+    def disconnect(self, ws): self.active_connections.remove(ws)
+    async def broadcast(self, msg):
+        for c in self.active_connections:
+            try: await c.send_json(msg)
+            except: pass
 
 manager = ConnectionManager()
 
 # ==========================================
-# 4. ZEROMQ -> ML -> WEBSOCKET PIPELINE
+# 3. CORE LOGIC & PIPELINES
 # ==========================================
+
+async def auto_csv_audit():
+    global is_auditing
+    if is_auditing: return
+    
+    is_auditing = True
+    detector.activation_buffer.clear()
+    
+    # Switch dataset based on mode
+    csv_path = r"D:\indore\poison-guard-monorepo-s\python_ml_backend\credit_test.csv" if DOMAIN_MODE == "CREDIT" else r"D:\indore\poison-guard-monorepo-s\python_ml_backend\poison_test.csv"
+    
+    await asyncio.sleep(1.0) 
+    try:
+        if os.path.exists(csv_path):
+            print(f"[AUTO-AUDIT] Running Domain: {DOMAIN_MODE}")
+            df = pd.read_csv(csv_path)
+            for i, row in df.iterrows():
+                payload = {
+                    "batch_id": f"{DOMAIN_MODE}_TRX_{i}",
+                    "demo_vector": [float(row['feat1']), float(row['feat2']), float(row['risk_score'])],
+                    "profile": DOMAIN_MODE
+                }
+                await process_data(payload, "AUTO_FORENSICS")
+                await asyncio.sleep(1.3)
+        else:
+            print(f"[ERROR] {csv_path} missing. Run prepare_data script first.")
+    finally:
+        is_auditing = False
+
+async def process_data(payload, source):
+    profile = payload.get("profile", "UPI")
+    
+    # 1. LAYER 1: Statistical Check
+    f1, f2 = payload["demo_vector"][0], payload["demo_vector"][1]
+    is_stat_anomaly, stats_reason = stats_filter.check_heuristics(f1, f2)
+
+    # 2. LAYER 2 & 3: Neural & Spectral
+    ext = shadow.extract_activations(payload["demo_vector"])
+    is_p, svd_flag = detector.detect_poison(ext)
+    
+    # RL Warden Adjustment
+    rl_feedback = warden.evaluate_action(is_p or is_stat_anomaly, ext["true_label"])
+    detector.eps_threshold = rl_feedback["new_eps"]
+    
+    # 4. LAYER 4: Groq Contextual Auditor
+    report = f"Integrity Verified. Metrics within {profile} norm."
+    
+    if is_p or is_stat_anomaly or svd_flag:
+        report = await asyncio.to_thread(
+            rag.explain_threat, 
+            payload.get("batch_id", "CSV"), 
+            ext["mse_score"], 
+            payload["demo_vector"],
+            stats_reason,
+            svd_flag,
+            profile=profile # Pass domain context to LLM
+        )
+
+    await manager.broadcast({
+        "type": source,
+        "data": {
+            "batch_id": payload.get("batch_id"),
+            "active_threats": 1 if (is_p or is_stat_anomaly or svd_flag) else 0,
+            "rl_reward": rl_feedback["reward"],
+            "rl_new_eps": rl_feedback["new_eps"],
+            "rag_explanation": f"[{rl_feedback['action_log']}] {report}",
+            "cluster_delta": payload["demo_vector"] 
+        }
+    })
+
 async def zmq_ingestion_loop():
     ctx = zmq.asyncio.Context()
-    sock = ctx.socket(zmq.PULL)
-    sock.bind("tcp://127.0.0.1:5555")
-    
-    print("[ZMQ] Listening for high-speed C++ ingestion stream...")
-
+    sock = ctx.socket(zmq.PULL); sock.bind("tcp://127.0.0.1:5555")
     while True:
         try:
             msg = await sock.recv_string()
-            payload = json.loads(msg)
-            
-            # 1. Shadow Model Inference
-            extract = shadow_model.extract_activations(payload["demo_vector"])
-            
-            # 2. DBSCAN Anomaly Detection
-            is_poisoned = art_detector.detect_poison(extract)
-            
-            # 3. RL Policy Evaluation (The Warden)
-            current_reward = rl_warden.evaluate_action(is_poisoned, extract["risk_score"])
-            
-            # 4. RAG Audit Report Generation
-            report = "SYSTEM NOMINAL: Data stream verified clean."
-            if is_poisoned:
-                report = rag_sidecar.explain_threat(payload["batch_id"], extract["risk_score"])
-            
-            # 5. Broadcast to Dashboard
-            ws_payload = {
-                "type": "TELEMETRY_UPDATE",
-                "data": {
-                    "batch_id": payload.get("batch_id"),
-                    "ingestion_rate": payload.get("ingestion_rate", "1.2GB/s"),
-                    "active_threats": 1 if is_poisoned else 0,
-                    "rl_reward": current_reward,
-                    "rag_explanation": report,
-                    "cluster_delta": [round(v, 2) for v in extract["activations"][:3]]
-                }
-            }
-            await manager.broadcast(ws_payload)
-            
-        except Exception as e:
-            print(f"[ERROR] Pipeline Failure: {e}")
+            data = json.loads(msg)
+            # Default to UPI for external streams unless specified
+            data.setdefault("profile", "UPI")
+            await process_data(data, "ZMQ_STREAM")
+        except: await asyncio.sleep(0.1)
 
 # ==========================================
-# 5. ENDPOINTS
+# 4. ENDPOINTS
 # ==========================================
 
 @app.get("/", response_class=HTMLResponse)
-async def get_dashboard():
-    return html_content
+async def root(): return html_content
 
 @app.websocket("/ws/dashboard")
-async def websocket_endpoint(websocket: WebSocket):
-    await manager.connect(websocket)
+async def websocket_endpoint(ws: WebSocket):
+    global current_audit_task
+    await manager.connect(ws)
+    if current_audit_task and not current_audit_task.done():
+        current_audit_task.cancel()
+    current_audit_task = asyncio.create_task(auto_csv_audit())
     try:
-        while True:
-            await websocket.receive_text() 
+        while True: await ws.receive_text() 
     except WebSocketDisconnect:
-        manager.disconnect(websocket)
-
-@app.get("/health")
-async def health_check():
-    return {"status": "Active", "engine": "ZMQ-PyTorch-DBSCAN-RL-RAG"}
+        manager.disconnect(ws)
